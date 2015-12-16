@@ -20,28 +20,28 @@
 
 			'#your-name': {
 				required: true,
-				message: 'Required Field'
+				message: 'Who are you? Please add your name here.'
 			},
 			'#your-email': {
 				required: true,
-				message: 'Required Field'
+				message: "Don't forget to enter your email!"
 			},
 			'#your-age': {
 				required: true,
-				message: 'Required Field'
+				message: 'How old are you? Please enter your age here.'
 			},
 			'#your-country': {
 				required: true,
-				message: 'Required Field'
+				message: 'Where are you? Please enter your country here!'
 			},
 			'#your-idea': {
 				required: true,
-				message: 'Required Field',
+				message: 'Whoops! you forgot to tell us your idea!',
 				test: function(value){
 
 					if(value.length > 500){
 
-						return new Error('Please submit your idea in 500 characters or less');
+						return new Error('Please make sure to submit your idea in 500 characters or less.');
 					}
 
 					return true;

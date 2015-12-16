@@ -1,12 +1,12 @@
 <?php 
 if(isset($_POST['submit'])){
-    $to = "bfwsharp@gmail.com"; // Email here
-    $from = $_POST['email']; // this is the sender's Email address
+    $to = "bfwsharp@gmail.com";
+    $from = $_POST['email'];
     $name = $_POST['name'];
     $age = $_POST['age'];
     $idea = $_POST['idea'];
     $subject = "Libratone Nightingale | 360 idea submission from " . $_POST['name'];
-    $message = "Nightingale 360 idea submission has been recieved." . "\n\n" . "Name: " . $name . "\n\n" . "Age: " . $age . "\n\n" . "Email: " . $from . "\n\n" . "Idea: " . "\n\n" . $idea;
+    $message = "A Nightingale 360 idea submission has been recieved." . "\n\n" . "From: " . $name . "\n\n" . "Age: " . $age . "\n\n" . "Their email: " . $from . "\n\n" . "Their idea: " . "\n\n" . $idea;
 
     $headers = "From:" . $from;
     mail($to,$subject,$message,$headers);
@@ -23,13 +23,12 @@ if(isset($_POST['submit'])){
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Libratone Nightingale - 360 Sign Up</title>
-        <meta name="description" content="">
+        <meta name="description" content="Submit your 360 degree idea to Libratone.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7608432/626348/css/fonts.css" />
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/fonts.css">
         <link rel="stylesheet" href="css/main.css">
 
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -46,7 +45,7 @@ if(isset($_POST['submit'])){
           <div id="header-content--inner">
             <img id="logo" src="img/logo.png">
             <h1>Welcome to Nightingale</h1>
-            <p>Sigma &amp; Libratone have teamed up to create a new track 'Nightingale'. We're going to send out 360° Libratone speakers and 360° cameras to people around the World to capture the crazy, beautiful and amazing things you get up to while you listen to it. Game?</p>
+            <p>Sigma &amp; Libratone have teamed up to create a new track 'Nightingale'. We're going to send out 360&deg; Libratone speakers and 360&deg; cameras to people around the World to capture the crazy, beautiful and amazing things you get up to while you listen to it. Game?</p>
           </div>
           <a class="page-scroll" href="#get-involved"><img class="chev bounce" src="img/chev-white.svg"></a>
         </div>
