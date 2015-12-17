@@ -1,17 +1,5 @@
-<?php 
-  if(isset($_POST['submit'])){
-    $to = "bfwsharp@gmail.com";
-    $from = $_POST['email'];
-    $name = $_POST['name'];
-    $age = $_POST['age'];
-    $idea = $_POST['idea'];
-    $subject = "Libratone Nightingale | 360 idea submission from " . $_POST['name'];
-    $message = "A Nightingale 360 idea submission has been recieved." . "\n\n" . "From: " . $name . "\n\n" . "Age: " . $age . "\n\n" . "Their email: " . $from . "\n\n" . "Their idea: " . "\n\n" . $idea;
-
-    $headers = "From:" . $from;
-    mail($to,$subject,$message,$headers);
-    header('Location: thank_you.php');
-  }
+<?php
+require_once('phpmailer/mail.php');
 ?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
