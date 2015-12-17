@@ -47,7 +47,7 @@ if(isset($_POST['submit'])){
             <h1>Welcome to Nightingale</h1>
             <p>Sigma &amp; Libratone have teamed up to create a new track 'Nightingale'. We're going to send out 360&deg; Libratone speakers and 360&deg; cameras to people around the World to capture the crazy, beautiful and amazing things you get up to while you listen to it. Game?</p>
           </div>
-          <a class="page-scroll" href="#get-involved"><img class="chev bounce" src="img/chev-white.svg"></a>
+          <a class="page-scroll" href="#get-involved"><img class="chev bounce" src="img/chev-white.png"></a>
         </div>
       </div>
     </header>
@@ -73,7 +73,7 @@ if(isset($_POST['submit'])){
         </div>
         <div class="row">
           <div class="col-md-12">
-            <a class="page-scroll" href="#submission"><img class="chev" src="img/chev-black.svg"></a>
+            <a class="page-scroll" href="#submission"><img class="chev" src="img/chev-black.png"></a>
           </div>
         </div>
       </div>
