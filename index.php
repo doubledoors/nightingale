@@ -345,7 +345,7 @@ require_once('phpmailer/mail.php');
                 <textarea id="your-idea" name="idea"></textarea>
               </div>
             </div>
-            <input id="submit" type="image" src="img/submit.png" border="0" name="submit" alt="Let's do this.">
+            <input type="submit" name="submit" value="LET'S DO THIS">
           </form>
         </div>
       </div>
