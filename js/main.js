@@ -24,7 +24,18 @@
 			},
 			'#your-email': {
 				required: true,
-				message: "Don't forget to enter your email!"
+				message: "Don't forget to enter your email!",
+				test: function(value){
+
+					console.log(!value.indexOf("@"));
+
+					if (!value.indexOf("@") || !value.indexOf(".")){
+					    
+					    return new Error('Please enter a valid email address.');
+					}
+
+					return true;
+				}
 			},
 			'#your-age': {
 				required: true,
