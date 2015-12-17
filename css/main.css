@@ -164,7 +164,7 @@ form input, form textarea{
 	border: 1px solid #484849;
 }
 
-form input[type=submit] {
+form input#submit {
 
 	background-color: #5fb5c6;
 	color: #fff;

@@ -107,7 +107,7 @@ if(isset($_POST['submit'])){
                 <textarea id="your-idea" name="idea"></textarea>
               </div>
             </div>
-            <input type="submit" name="submit" value="LET'S DO THIS">
+            <input id="submit" type="image" src="img/submit.png" border="0" name="submit" alt="Let's do this.">
           </form>
         </div>
       </div>

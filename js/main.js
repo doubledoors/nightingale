@@ -28,7 +28,16 @@
 			},
 			'#your-age': {
 				required: true,
-				message: 'How old are you? Please enter your age here.'
+				message: 'How old are you? Please enter your age here.',
+				test: function(value){
+
+					if(value < 18){
+
+						return new Error('Sorry! You must be 18 or over to enter.');
+					}
+
+					return true;
+				}
 			},
 			'#your-country': {
 				required: true,
