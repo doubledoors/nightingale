@@ -4,12 +4,14 @@ html, body{
 }
 
 html{
+
 	font-size: 21px;
 }
 
 body{
 
 	font-family: 'Gotham-Book';
+	background-color: #e2dedb;
 	color: #1d1d1b;
 }
 
@@ -96,12 +98,18 @@ section{
 	padding: 54px 0;
 }
 
-section#get-involved{
+section.light{
+
+	background-color: #f4f3f4;
+}
+
+section.get-involved{
 	
 	background-color: #e2dedb;
 }
 
-#get-involved__copy{
+#get-involved > .container > .row,
+#terms > .container > .row > h2{
 
 	margin-bottom: 60px;
 }
@@ -126,11 +134,6 @@ section#get-involved{
 	top: 20px;
 }
 
-section#submission{
-
-	background-color: #f4f3f4;
-}
-
 form{
 
 	margin-top: 65px;
@@ -143,7 +146,7 @@ form label{
 	text-align: left;
 }
 
-form input{
+form input, form select{
 
 	width: 100%;
 	height: 41px;
@@ -159,22 +162,28 @@ form textarea#your-idea{
 	font-size: 0.9524rem;
 }
 
-form input, form textarea{
+form input, form textarea, form select{
 
 	border: 1px solid #484849;
 }
 
+select {
+
+	padding-left: 10px;
+	overflow: hidden;
+	background: #ffffff;
+	border: 1px solid #ccc;
+	-webkit-appearance: none;
+  	-webkit-border-radius: 0px;
+}
+
 form input#submit {
 
-	background-color: #5fb5c6;
 	color: #fff;
 	width: 225px;
 	height: 70px;
 	border: 0;
 	margin-top: 65px;
-	border-radius: 25px;
-	-webkit-border-radius: 25px;
-	-moz-border-radius: 25px;
 }
 
 .input-wrap{

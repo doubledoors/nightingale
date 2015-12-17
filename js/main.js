@@ -57,11 +57,20 @@
 			},
 			'#your-country': {
 				required: true,
-				message: 'Where are you? Please enter your country here!'
+				message: 'Where are you? Please select your country!',
+				test: function(value){
+
+					if(value === ""){
+
+						return new Error('Please select a country');
+					}
+
+					return true;
+				}
 			},
 			'#your-idea': {
 				required: true,
-				message: 'Whoops! you forgot to tell us your idea!',
+				message: 'Whoops! You forgot to tell us your idea!',
 				test: function(value){
 
 					if(value.length > 500){
