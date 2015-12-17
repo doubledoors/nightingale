@@ -8,8 +8,9 @@
 		$email = $_POST['email'];
 		$idea = $_POST['idea'];
 
-		ini_set('display_errors',  true); // DONT PUSH LIVE
-		error_reporting(1); // DONT PUSH LIVE
+		// Error reporting for debug
+		// ini_set('display_errors',  true); 
+		// error_reporting(1); 
 		
 		//SMTP needs accurate times, and the PHP time zone MUST be set
 		//This should be done in your php.ini, but this is how to do it if you don't have access to that
@@ -27,7 +28,7 @@
 		// 0 = off (for production use)
 		// 1 = client messages
 		// 2 = client and server messages
-		$mail->SMTPDebug = 2;
+		$mail->SMTPDebug = 0;
 
 		//Ask for HTML-friendly debug output
 		$mail->Debugoutput = 'html';
@@ -60,9 +61,9 @@
 		$mail->addAddress('libratonecasting@gmail.com', 'Libratone Casting');
 
 		//Set the subject line
-		$mail->Subject = 'Libratone GMail SMTP test';
+		$mail->Subject = 'Nightingale 360 | Idea Submission from '.$name;
 
-		$mail->Body = "<html><h2>Libratone submission</h2><p>".$name.", ".$age.", ".$email.", ".$country.", ".$idea."</p></html>";
+		$mail->Body = "<html><h2>Nightingale 360 | Idea Submission</h2><p>From: ".$name."<br/><br/>Age:  ".$age."<br/><br/>Email: ".$email."<br/><br/>Country: ".$country."<br/><br/>Idea submission:<br/><br/> ".$idea."</p></html>";
 
 		//Replace the plain text body with one created manually
 		$mail->AltBody = 'This is a plain-text message body';
@@ -71,7 +72,7 @@
 		if (!$mail->send()) {
 		    echo "Mailer Error: " . $mail->ErrorInfo;
 		} else {
-		    echo "Message sent!";
+		    header('Location: thank_you.php');
 		}
 	}
 ?>

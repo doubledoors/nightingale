@@ -1,40 +1,41 @@
 <?php
-//Get IP
-if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
-    $ip = $_SERVER['HTTP_CLIENT_IP'];
-} elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-    $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-} else {
-    $ip = $_SERVER['REMOTE_ADDR'];
-}
+// //Get IP
+// if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+//     $ip = $_SERVER['HTTP_CLIENT_IP'];
+// } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+//     $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+// } else {
+//     $ip = $_SERVER['REMOTE_ADDR'];
+// }
 
-//Load GEO Detect Scripts
-require 'geo-database/geoip.inc';
-require 'geo-database/vendor/autoload.php';
+// //Load GEO Detect Scripts
+// require 'geo-database/geoip.inc';
+// require 'geo-database/vendor/autoload.php';
 
-//Check IP against DB
-$gi = geoip_open("/var/www/vhosts/ben-sharp.co.uk/nightingale360.com/geo-database/GeoIP.dat",GEOIP_STANDARD);
-$country_code =  geoip_country_code_by_addr($gi, $ip) . "\t";
-$country_code = preg_replace('/\s+/', '', $country_code);
-geoip_close($gi);
+// //Check IP against DB
+// $gi = geoip_open("/var/www/vhosts/ben-sharp.co.uk/nightingale360.com/geo-database/GeoIP.dat",GEOIP_STANDARD);
+// $country_code =  geoip_country_code_by_addr($gi, $ip) . "\t";
+// $country_code = preg_replace('/\s+/', '', $country_code);
+// geoip_close($gi);
 
-//Redirects
-if($country_code == "GB" && $_SERVER['HTTP_HOST'] != "nightingale360.com/uk"){
-    header( 'Location: http://nightingale360.com/uk' ) ;
-    die();
-}elseif ($country_code == "DE" && $_SERVER['HTTP_HOST'] != "nightingale360.com/de"){
-    header( 'Location: http://nightingale360.com/de' ) ;
-    die();
-}elseif ($country_code == "USA" && $_SERVER['HTTP_HOST'] != "nightingale360.com/us"){
-    header( 'Location: http://nightingale360.com/us' ) ;
-    die();
-}
+// //Redirects
+// if($country_code == "GB" && $_SERVER['HTTP_HOST'] != "nightingale360.com/uk"){
+//     header( 'Location: http://nightingale360.com/uk' ) ;
+//     die();
+// }elseif ($country_code == "DE" && $_SERVER['HTTP_HOST'] != "nightingale360.com/de"){
+//     header( 'Location: http://nightingale360.com/de' ) ;
+//     die();
+// }elseif ($country_code == "USA" && $_SERVER['HTTP_HOST'] != "nightingale360.com/us"){
+//     header( 'Location: http://nightingale360.com/us' ) ;
+//     die();
+// }
 
-//Session Var for Country Code
-if(!isset($_SESSION['country_code'])) {
-    $_SESSION['country_code'] = $country_code;
-}
+// //Session Var for Country Code
+// if(!isset($_SESSION['country_code'])) {
+//     $_SESSION['country_code'] = $country_code;
+// }
 
+// Require PHPMailer for form submission
 require_once('phpmailer/mail.php');
 
 ?>
@@ -71,7 +72,7 @@ require_once('phpmailer/mail.php');
             <h1>Welcome to Nightingale</h1>
             <p>To celebrate the launch of the Libratone ZIPP 360&deg; speaker, we've teamed up with world-famous dance act SIGMA to create an epic new track 'Nightingale' and want you to star in our 360&deg; video.</p>
           </div>
-          <a class="page-scroll" href="#get-involved"><img class="chev bounce" src="img/chev-white.png"></a>
+          <a class="page-scroll hidden-xs" href="#get-involved"><img class="chev bounce" src="img/chev-white.png"></a>
         </div>
       </div>
     </header>
