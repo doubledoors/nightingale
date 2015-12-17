@@ -14,6 +14,13 @@
         event.preventDefault();
     });
 
+    var happy = {
+
+	    email: function (val) {
+	        return /^(?:\w+\.?\+?)*\w+@(?:\w+\.)+\w+$/.test(val);
+	    },
+	};
+
 	$('#nightingale-form').isHappy({
 
 		fields: {
@@ -27,11 +34,9 @@
 				message: "Don't forget to enter your email!",
 				test: function(value){
 
-					console.log(!value.indexOf("@"));
+					if(!happy.email(value)){
 
-					if (!value.indexOf("@") || !value.indexOf(".")){
-					    
-					    return new Error('Please enter a valid email address.');
+						return new Error('Please enter a valid email address.');
 					}
 
 					return true;
