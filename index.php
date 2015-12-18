@@ -71,10 +71,18 @@ require_once('phpmailer/mail.php');
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-5TQLQJ');</script>
-    <!-- End Google Tag Manager —>
+
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <nav>
         <a href="http://www.libratone.com" target="_blank">Visit Libratone.com</a>
         <ul id="lang-select">
@@ -410,7 +418,16 @@ require_once('phpmailer/mail.php');
         </div>
       </div>
     </section>
-    <section class="dark" id="terms">
+    <section class="dark">
+        <div class="row">
+            <div class="col-md-12">
+                <a class="share twitter-share-button" href="http://twitter.com/intent/tweet?status=Sigma+and+Libratone+have+created+a+new+track+and+you+can+star+in+Libratone's+epic+360+&deg;+video.+Get+involved! http://bit.ly/1majBwy" target="_blank"><img src="img/tweet.png"></a>
+                <a class="share" href="http://www.facebook.com/share.php?u=www.nightingale360.com&title=Libratone+Nightingale+360" target="_blank"><img alt="Share on Facebook!" src="img/fb.png"></a>
+                <h2>#nightingale</h2>
+            </div>
+        </div>
+    </section>
+    <section class="light" id="terms">
       <div class="container">
         <div class="row">
           <h2>Terms &amp; Conditions</h2>
