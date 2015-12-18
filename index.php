@@ -26,9 +26,6 @@
 // }elseif ($country_code == "DE" && $_SERVER['HTTP_HOST'] != "nightingale360.com/de"){
 //     header( 'Location: http://nightingale360.com/de' ) ;
 //     die();
-// }elseif ($country_code == "USA" && $_SERVER['HTTP_HOST'] != "nightingale360.com/us"){
-//     header( 'Location: http://nightingale360.com/us' ) ;
-//     die();
 // }
 
 // //Session Var for Country Code
@@ -66,7 +63,12 @@ require_once('phpmailer/mail.php');
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <nav>
-
+        <a href="http://www.libratone.com" target="_blank">Visit Libratone.com</a>
+        <ul id="lang-select">
+            <li><a href="#"><img src="img/dk.png"></a></li>
+            <li><a href="#"><img src="img/de.png"></a></li>
+            <li><a href="#"><img src="img/gb.png"></a></li>
+        </ul>
     </nav>
     <header>
       <!-- <div id="top-bar"></div>   -->

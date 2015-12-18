@@ -18,10 +18,29 @@ body{
 }
 
 nav{
+
 	position: fixed;
 	width: 100%;
 	height: 50px;
-	background-color: transparent;
+	background-color: rgba(0, 0, 0, 0.5);
+	/*border-bottom: 1px solid #000000;*/
+	padding: 12px 25px;
+	font-size: 18px;
+	font-size: 0.85rem;
+	z-index: 99;
+	color: #ffffff;
+}
+
+nav a, nav a:hover, nav a:visited, nav a:active{
+
+	text-decoration: none;
+	color: #ffffff;
+}
+
+nav ul#lang-select > li > a > img{
+
+	width: 30px;
+	height: 30px;
 }
 
 header{
