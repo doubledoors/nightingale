@@ -29,7 +29,7 @@
           <div id="header-content--inner">
             <img id="logo" src="img/logo.png">
             <p>Thank you for sending us your idea for the 360&deg; Nightingale video. We're working our way through people's brilliant ideas, and if we like yours we'll be in touch soon about sending you a camera and a speaker.</p>
-            <p>In the meantime, you can check out the new <a href="https://www.libratone.com/uk/products/libratone-zipp" title="libratone Zipp 360 speaker" target="_blank">Libratone Zipp 360&deg; speaker.</a></p>
+            <p>In the meantime, you can check out the new <a id="thanks" href="https://www.libratone.com/uk/soundspace-speakers" title="Libratone Zipp 360 speaker" target="_blank">Libratone ZIPP 360&deg; speaker.</a></p>
           </div>
         </div>
       </div>

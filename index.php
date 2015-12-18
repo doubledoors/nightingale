@@ -1,37 +1,41 @@
 <?php
 
-// //Get IP
-// if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
-//     $ip = $_SERVER['HTTP_CLIENT_IP'];
-// } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-//     $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-// } else {
-//     $ip = $_SERVER['REMOTE_ADDR'];
-// }
+//Get IP
+if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+    $ip = $_SERVER['HTTP_CLIENT_IP'];
+} elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+    $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+} else {
+    $ip = $_SERVER['REMOTE_ADDR'];
+}
 
-// //Load GEO Detect Scripts
-// require 'geo-database/geoip.inc';
-// require 'geo-database/vendor/autoload.php';
+//Load GEO Detect Scripts
+require 'geo-database/geoip.inc';
+require 'geo-database/vendor/autoload.php';
 
-// //Check IP against DB
-// $gi = geoip_open("/var/www/vhosts/ben-sharp.co.uk/nightingale360.com/geo-database/GeoIP.dat",GEOIP_STANDARD);
-// $country_code =  geoip_country_code_by_addr($gi, $ip) . "\t";
-// $country_code = preg_replace('/\s+/', '', $country_code);
-// geoip_close($gi);
+//Check IP against DB
+$gi = geoip_open("/var/www/vhosts/ben-sharp.co.uk/nightingale360.com/geo-database/GeoIP.dat",GEOIP_STANDARD);
+$country_code =  geoip_country_code_by_addr($gi, $ip) . "\t";
+$country_code = preg_replace('/\s+/', '', $country_code);
+geoip_close($gi);
 
-// //Redirects
-// if($country_code == "DK" && $_SERVER['HTTP_HOST'] != "nightingale360.com/dk"){
-//     header( 'Location: http://nightingale360.com/dk' ) ;
-//     die();
-// }elseif ($country_code == "DE" && $_SERVER['HTTP_HOST'] != "nightingale360.com/de"){
-//     header( 'Location: http://nightingale360.com/de' ) ;
-//     die();
-// }
+if(!$_GET["redirect"]){
+    
+    //Redirects
+    if($country_code == "DK" && $_SERVER['HTTP_HOST'] != "nightingale360.com/dk"){
+        header( 'Location: http://nightingale360.com/dk' ) ;
+        die();
+    }elseif ($country_code == "DE" && $_SERVER['HTTP_HOST'] != "nightingale360.com/de"){
+        header( 'Location: http://nightingale360.com/de' ) ;
+        die();
+    }
 
-// //Session Var for Country Code
-// if(!isset($_SESSION['country_code'])) {
-//     $_SESSION['country_code'] = $country_code;
-// }
+}
+
+//Session Var for Country Code
+if(!isset($_SESSION['country_code'])) {
+    $_SESSION['country_code'] = $country_code;
+}
 
 // Require PHPMailer for form submission
 require_once('phpmailer/mail.php');
@@ -52,7 +56,6 @@ require_once('phpmailer/mail.php');
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7608432/626348/css/fonts.css" />
-        <!-- <link rel="stylesheet" href="css/fonts.css"> -->
         <link rel="stylesheet" href="css/main.css">
 
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -60,15 +63,23 @@ require_once('phpmailer/mail.php');
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5TQLQJ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5TQLQJ');</script>
+    <!-- End Google Tag Manager —>
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <nav>
         <a href="http://www.libratone.com" target="_blank">Visit Libratone.com</a>
         <ul id="lang-select">
-            <li><a href="#"><img src="img/dk.png"></a></li>
-            <li><a href="#"><img src="img/de.png"></a></li>
-            <li><a href="#"><img src="img/gb.png"></a></li>
+            <li><a title="Visit the Danish site" href="http://www.nightingale360.com/dk"><img src="img/dk.png"></a></li>
+            <li><a title="Visit the German site" href="http://www.nightingale360.com/de"><img src="img/de.png"></a></li>
         </ul>
     </nav>
     <header>
@@ -97,7 +108,7 @@ require_once('phpmailer/mail.php');
           <div class="col-md-4">
             <div class="circ"><p>2.</p></div>
             <h3>FILM YOUR 360&deg; SCENE</h3>
-            <p>If we like your idea we’ll send you a 360&deg; Libratone Zipp speaker and a 360&deg; camera to film the action.</p>
+            <p>If we like your idea we’ll send you a 360&deg; Libratone ZIPP speaker and a 360&deg; camera to film the action.</p>
           </div>
           <div class="col-md-4">
             <div class="circ"><p>3.</p></div>

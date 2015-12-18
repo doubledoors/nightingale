@@ -43,7 +43,7 @@ nav ul#lang-select{
 	padding: 0;
 	float: right;
 	list-style-type: none;
-	width: 85px;
+	width: 60px;
 }
 
 nav ul#lang-select > li{
@@ -309,6 +309,7 @@ form input[type=checkbox] {
 form input[type=submit] {
 
 	background-color: #5fb5c6;
+	padding-left: 0px;
 	color: #fff;
 	width: 225px;
 	height: 70px;
@@ -349,6 +350,12 @@ form input[type=submit] {
 	width: 100%;
 	text-align: center;
 	font-weight: normal;
+}
+
+#thanks{
+
+	color: #fff;
+	text-decoration: underline;
 }
 
 
