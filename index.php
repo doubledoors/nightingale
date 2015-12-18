@@ -51,7 +51,8 @@ require_once('phpmailer/mail.php');
         
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7608432/626348/css/fonts.css" />
+        <!-- <link rel="stylesheet" href="css/fonts.css"> -->
         <link rel="stylesheet" href="css/main.css">
 
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -71,13 +72,13 @@ require_once('phpmailer/mail.php');
         </ul>
     </nav>
     <header>
-      <!-- <div id="top-bar"></div>   -->
       <div id="header-content">
         <div id="header-content--middle">
           <div id="header-content--inner">
             <img id="logo" src="img/logo.png">
             <h1>Welcome to Nightingale</h1>
             <p>To celebrate the launch of the Libratone ZIPP 360&deg; speaker, we've teamed up with world-famous dance act SIGMA to create an epic new track 'Nightingale' and want you to star in our 360&deg; video.</p>
+            <p>We'll be sending out our speakers with 360° cameras to SIGMA fans all over the world to capture the crazy, beautiful and amazing things you get up to while you listen to the song. The result?  An awesome 360&deg; video made by you.</p>
           </div>
           <a class="page-scroll hidden-xs" href="#get-involved"><img class="chev bounce" src="img/chev-white.png"></a>
         </div>
