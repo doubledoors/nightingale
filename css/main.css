@@ -168,6 +168,8 @@ form label#terms-label{
 
 	position: relative;
 	text-align: center;
+	width: 400px;
+	margin: 30px auto;
 }
 
 form input, form select{
@@ -176,6 +178,7 @@ form input, form select{
 	height: 41px;
 	font-size: 21px;
 	font-size: 1rem;
+	padding-left: 15px;
 }
 
 form textarea#your-idea{

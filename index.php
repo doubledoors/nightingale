@@ -1,39 +1,40 @@
 <?php
-//Get IP
-if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
-    $ip = $_SERVER['HTTP_CLIENT_IP'];
-} elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-    $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-} else {
-    $ip = $_SERVER['REMOTE_ADDR'];
-}
 
-//Load GEO Detect Scripts
-require 'geo-database/geoip.inc';
-require 'geo-database/vendor/autoload.php';
+// //Get IP
+// if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+//     $ip = $_SERVER['HTTP_CLIENT_IP'];
+// } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+//     $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+// } else {
+//     $ip = $_SERVER['REMOTE_ADDR'];
+// }
 
-//Check IP against DB
-$gi = geoip_open("/var/www/vhosts/ben-sharp.co.uk/nightingale360.com/geo-database/GeoIP.dat",GEOIP_STANDARD);
-$country_code =  geoip_country_code_by_addr($gi, $ip) . "\t";
-$country_code = preg_replace('/\s+/', '', $country_code);
-geoip_close($gi);
+// //Load GEO Detect Scripts
+// require 'geo-database/geoip.inc';
+// require 'geo-database/vendor/autoload.php';
 
-//Redirects
-if($country_code == "DK" && $_SERVER['HTTP_HOST'] != "nightingale360.com/dk"){
-    header( 'Location: http://nightingale360.com/dk' ) ;
-    die();
-}elseif ($country_code == "DE" && $_SERVER['HTTP_HOST'] != "nightingale360.com/de"){
-    header( 'Location: http://nightingale360.com/de' ) ;
-    die();
-}elseif ($country_code == "USA" && $_SERVER['HTTP_HOST'] != "nightingale360.com/us"){
-    header( 'Location: http://nightingale360.com/us' ) ;
-    die();
-}
+// //Check IP against DB
+// $gi = geoip_open("/var/www/vhosts/ben-sharp.co.uk/nightingale360.com/geo-database/GeoIP.dat",GEOIP_STANDARD);
+// $country_code =  geoip_country_code_by_addr($gi, $ip) . "\t";
+// $country_code = preg_replace('/\s+/', '', $country_code);
+// geoip_close($gi);
 
-//Session Var for Country Code
-if(!isset($_SESSION['country_code'])) {
-    $_SESSION['country_code'] = $country_code;
-}
+// //Redirects
+// if($country_code == "DK" && $_SERVER['HTTP_HOST'] != "nightingale360.com/dk"){
+//     header( 'Location: http://nightingale360.com/dk' ) ;
+//     die();
+// }elseif ($country_code == "DE" && $_SERVER['HTTP_HOST'] != "nightingale360.com/de"){
+//     header( 'Location: http://nightingale360.com/de' ) ;
+//     die();
+// }elseif ($country_code == "USA" && $_SERVER['HTTP_HOST'] != "nightingale360.com/us"){
+//     header( 'Location: http://nightingale360.com/us' ) ;
+//     die();
+// }
+
+// //Session Var for Country Code
+// if(!isset($_SESSION['country_code'])) {
+//     $_SESSION['country_code'] = $country_code;
+// }
 
 // Require PHPMailer for form submission
 require_once('phpmailer/mail.php');
@@ -388,7 +389,7 @@ require_once('phpmailer/mail.php');
               </div>
             </div>
             <div class="col-md-12">
-                <label id="terms-label"><input id="terms-check" type="checkbox" name="terms" >I have read and accept the <a class="page-scroll" title="Terms and Conditions" href="#terms">Terms &amp; Conditions</a></label>
+                <label for="terms-check" id="terms-label"><input id="terms-check" type="checkbox" name="terms" >I have read and accept the <a class="page-scroll" title="Terms and Conditions" href="#terms">Terms &amp; Conditions</a></label>
                 <input type="submit" name="submit" value="LET'S DO THIS">
             </div>
           </form>
