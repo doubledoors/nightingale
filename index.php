@@ -51,9 +51,9 @@ require_once('phpmailer/mail.php');
         <meta name="description" content="Submit your Nightingale 360&deg; idea to Libratone.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7608432/626348/css/fonts.css" />
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fonts.css">
         <link rel="stylesheet" href="css/main.css">
 
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -65,7 +65,7 @@ require_once('phpmailer/mail.php');
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <nav>
-        
+
     </nav>
     <header>
       <!-- <div id="top-bar"></div>   -->
@@ -387,7 +387,10 @@ require_once('phpmailer/mail.php');
                 <textarea id="your-idea" name="idea"></textarea>
               </div>
             </div>
-            <input type="submit" name="submit" value="LET'S DO THIS">
+            <div class="col-md-12">
+                <label id="terms-label"><input id="terms-check" type="checkbox" name="terms" >I have read and accept the <a class="page-scroll" title="Terms and Conditions" href="#terms">Terms &amp; Conditions</a></label>
+                <input type="submit" name="submit" value="LET'S DO THIS">
+            </div>
           </form>
         </div>
       </div>

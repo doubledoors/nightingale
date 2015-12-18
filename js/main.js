@@ -80,6 +80,19 @@
 
 					return true;
 				}
+			},
+			'#terms-check': {
+				required: true,
+				message: "Please make sure you've read and agreed to the Terms and Conditions",
+				test: function(value){
+
+					if(!$('#terms-check').is(':checked')){
+
+						return new Error("Please accept the terms and conditions");
+					}
+
+					return true;
+				}
 			}
 		}
 	});
