@@ -1,0 +1,263 @@
+html, body{
+
+	height: 100%;
+}
+
+html{
+
+	font-size: 21px;
+}
+
+body{
+
+	font-family: "Gotham Narrow SSm A";
+	font-style: normal;
+	font-weight: 400;
+	background-color: #e2dedb;
+	color: #1d1d1b;
+}
+
+nav{
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background-color: transparent;
+}
+
+header{
+
+	background: url(../img/header-image.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+header #top-bar{
+
+	left: 0;
+	height: 50px;
+	background-color: red;
+}
+
+#header-content{
+	
+	display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#header-content--middle{
+
+	display: table-cell;
+    vertical-align: middle;
+}
+
+#header-content--inner{
+
+	margin: 0 auto 100px auto;
+    max-width: 775px;
+    font-size: 27px;
+    font-size: 1.286rem;
+    font-weight: normal;
+}
+
+#header-content h1, #header-content p{
+
+	color: #fff;
+	text-align: center;
+}
+
+#header-content h1{
+
+	margin-top: 0;
+	margin-bottom: 60px;
+	font-family: 'Gotham-Light';
+	font-size: 42px;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+#logo{
+
+	display: block;
+	width: 309px;
+	margin: 0px auto 50px auto;
+}
+
+.chev{
+
+	display: block;
+	width: 42px;
+	margin: 0 auto;
+}
+
+.bounce {
+
+	position:relative;
+	-webkit-animation:bounce 1.25s infinite;
+}
+
+@-webkit-keyframes bounce {
+	0%       { bottom:5px; }
+	25%, 75% { bottom:10px; }
+	50%      { bottom:15px; }
+	100%     { bottom:0; }
+}
+
+section{
+
+	text-align: center;
+	padding: 54px 0;
+}
+
+section.light{
+
+	background-color: #f4f3f4;
+}
+
+section.get-involved{
+	
+	background-color: #e2dedb;
+}
+
+#get-involved > .container > .row,
+#terms > .container > .row > h2{
+
+	margin-bottom: 60px;
+}
+
+.circ{
+
+	color: #fff;
+	font-size: 23px;
+	font-size: 1.095rem;
+	text-align: center;
+	background-color: #030405;
+	width: 70px;
+	height: 70px;
+	margin: 50px auto;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+.circ p{
+	position: relative;
+	top: 20px;
+}
+
+form{
+
+	margin-top: 65px;
+}
+
+form label{
+
+	display: block;
+	margin: 30px 0;
+	text-align: left;
+	padding-left: 15px;
+    text-indent: -15px;
+}
+
+form label#terms-label{
+
+	position: relative;
+	text-align: center;
+}
+
+form input, form select{
+
+	width: 100%;
+	height: 41px;
+	font-size: 21px;
+	font-size: 1rem;
+}
+
+form textarea#your-idea{
+
+	width: 100%;
+	height: 405px;
+	font-size: 20px;
+	font-size: 0.9524rem;
+}
+
+form input, form textarea, form select{
+
+	border: 1px solid #484849;
+}
+
+select {
+
+	padding-left: 10px;
+	overflow: hidden;
+	background: #ffffff;
+	border: 1px solid #ccc;
+	-webkit-appearance: none;
+  	-webkit-border-radius: 0px;
+}
+
+form input[type=checkbox] {
+
+	margin-right: 15px;
+	width: 30px;
+    height: 30px;
+    padding: 0;
+    vertical-align: bottom;
+    position: relative;
+    top: 4px;
+    *overflow: hidden;
+}
+
+form input[type=submit] {
+
+	background-color: #5fb5c6;
+	color: #fff;
+	width: 225px;
+	height: 70px;
+	border: 0;
+	margin-top: 10px;
+	border-radius: 25px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+}
+
+.input-wrap{
+
+	position: relative;
+}
+
+.input-wrap span{
+
+	text-align: left;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.unhappyMessage{
+
+	position: absolute;
+	top: -25px;
+	left: 0;
+	width: 450px;
+	color: red;
+}
+
+#terms-check_unhappy{
+
+	left: 0;
+	top: 40px;
+	width: 100%;
+	text-align: center;
+	font-weight: normal;
+}
+
+
+
+
