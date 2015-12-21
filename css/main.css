@@ -1,6 +1,7 @@
 html, body{
 
-	height: 100%;
+	width: 100%;
+    height: 100%;
 }
 
 html{
@@ -53,13 +54,13 @@ nav ul#lang-select > li{
 
 header{
 
+	width: 100%;
+	height: 100%;
 	background: url(../img/header-image.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	width: 100%;
-	height: 100%;
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
 	src='../img/header-image.jpg',
 	sizingMethod='scale');
@@ -121,9 +122,15 @@ header{
 
 @media (max-width: 767px) {
 
+	html, body{
+
+		overflow-x: hidden;
+	}
+
 	header{
 
 		height: auto;
+		background-attachment: scroll;
 	}
 
 	#header-content {

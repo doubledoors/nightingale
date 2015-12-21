@@ -377,12 +377,13 @@ require_once('phpmailer/mail.php');
       </div>
     </section>
     <section class="dark">
-        <div class="row">
-            <div class="col-md-12">
-                <a class="share twitter-share-button" href="http://twitter.com/intent/tweet?status=SIGMA+und+Libratone+haben+einen+neuen+Song+kreiert+und+Du+kannst+eine+Rolle+in+Libratone's+360&deg;+Video+spielen.+Sei+dabei!+http://bit.ly/1majBwy" target="_blank"><img src="img/tweet.png"></a>
-                <a class="share" href="http://www.facebook.com/share.php?u=www.nightingale360.com&title=Libratone+Nightingale+360" target="_blank"><img alt="Share on Facebook!" src="img/fb.png"></a>
-                <h2>#nightingale</h2>
-                
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a class="share twitter-share-button" href="http://twitter.com/intent/tweet?status=SIGMA+und+Libratone+haben+einen+neuen+Song+kreiert+und+Du+kannst+eine+Rolle+in+Libratone's+360&deg;+Video+spielen.+Sei+dabei!+http://bit.ly/1majBwy" target="_blank"><img src="img/tweet.png"></a>
+                    <a class="share" href="http://www.facebook.com/share.php?u=www.nightingale360.com&title=Libratone+Nightingale+360" target="_blank"><img alt="Share on Facebook!" src="img/fb.png"></a>
+                    <h2>#nightingale</h2>
+                </div>
             </div>
         </div>
     </section>
