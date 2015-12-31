@@ -73,7 +73,7 @@ require_once('phpmailer/mail.php');
           <div class="col-md-4">
             <div class="circ"><p>2.</p></div>
             <h3>OPTAG DIN 360° SCENE</h3>
-            <p>Wenn wir Deine Idee mögen, schicken wir Dir einen &deg; Libratone Lautsprecher und eine &deg; Videokamera, um die Szene einzufangen.</p>
+            <p>Hvis vi kan li' din idé, så sender vi dig en 360&deg; Libratone ZIPP højttaler og et 360&deg; kamera, så du kan optage scenen.</p>
           </div>
           <div class="col-md-4">
             <div class="circ"><p>3.</p></div>
