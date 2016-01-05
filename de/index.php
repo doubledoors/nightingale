@@ -15,6 +15,12 @@ require_once('phpmailer/mail.php');
         <title>Nightingale 360 Sign Up</title>
         <meta name="description" content="Submit your Nightingale 360&deg; idea to Libratone.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="og:url" content="localhost:8888/" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Nightingale 360" />
+        <meta property="og:description" content="SIGMA und Libratone haben einen neuen Song kreiert und Du kannst eine Rolle in Libratone's 360&deg; Video spielen. Sei dabei! http://bit.ly/1majBwy" />
+        <meta property="og:image" content="img/share-msg.png" />
         
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -26,6 +32,23 @@ require_once('phpmailer/mail.php');
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
+    <script>
+    window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1581713375417403',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+    };
+
+    (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
     <!-- Google Tag Manager -->
     <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5TQLQJ"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -53,7 +76,7 @@ require_once('phpmailer/mail.php');
         <div id="header-content--middle">
           <div id="header-content--inner">
             <img id="logo" src="img/logo.png">
-            <h1>Welcome to Nightingale</h1>
+            <h1>Wilkommen zu Nightingale</h1>
             <p>Um die Markteinführung der neuen Libratone ZIPP 360&deg; Lautsprecher zu feiern, haben wir uns mit dem weltberühmten Dance Act SIGMA zusammengetan, um den sagenhaften neuen Song &bdquo;Nightingale&ldquo; zu kreieren. Wir möchten, dass Du in unserem 360&deg; Video mitspielst!</p>
             <p>Wir werden unsere Lautsprecher zusammen mit 360&deg; Kameras an SIGMA Fans in der ganzen Welt schicken, um die verrückten, schönen und aufregenden Momente einzufangen, die ihr erlebt, wenn ihr das Lied hört. Das Ergebnis? Ein phantastisches 360&deg; Video, das Du gemacht hast!</p>
           </div>
@@ -74,12 +97,12 @@ require_once('phpmailer/mail.php');
           <div class="col-md-4">
             <div class="circ"><p>2.</p></div>
             <h3>Drehe Deine 360&deg; Filmszene</h3>
-            <p>Wenn wir Deine Idee mögen, schicken wir Dir einen &deg; Libratone Lautsprecher und eine &deg; Videokamera, um die Szene einzufangen.</p>
+            <p>Wenn wir Deine Idee mögen, schicken wir Dir einen 360&deg; Libratone Lautsprecher und eine 360&deg; Videokamera, um die Szene einzufangen.</p>
           </div>
           <div class="col-md-4">
             <div class="circ"><p>3.</p></div>
             <h3>Sende uns das Filmmaterial</h3>
-            <p>Die besten &deg; Filmszenen werden in dem Video erscheinen und in der ganzen Welt ausgestrahlt. Nett, oder?</p>
+            <p>Die besten 360&deg; Filmszenen werden in dem Video erscheinen und in der ganzen Welt ausgestrahlt. Nett, oder?</p>
           </div>
         </div>
         <div class="row">
@@ -381,7 +404,7 @@ require_once('phpmailer/mail.php');
             <div class="row">
                 <div class="col-md-12">
                     <a class="share twitter-share-button" href="http://twitter.com/intent/tweet?status=SIGMA+und+Libratone+haben+einen+neuen+Song+kreiert+und+Du+kannst+eine+Rolle+in+Libratone's+360&deg;+Video+spielen.+Sei+dabei!+http://bit.ly/1majBwy" target="_blank"><img src="img/tweet.png"></a>
-                    <a class="share" href="http://www.facebook.com/share.php?u=www.nightingale360.com&title=Libratone+Nightingale+360" target="_blank"><img alt="Share on Facebook!" src="img/fb.png"></a>
+                    <a class="share fb-share-button" href="" target="_blank"><img alt="Share on Facebook!" src="img/fb.png"></a>
                     <h2>#nightingale</h2>
                 </div>
             </div>
