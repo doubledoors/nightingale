@@ -43,20 +43,20 @@ require_once('phpmailer/mail.php');
     <nav>
         <a href="http://www.libratone.com" target="_blank">Visit Libratone.com</a>
         <ul id="lang-select">
-            <li><a href="http://www.nightingale360.com/de" title="Visit the German site"><img src="img/de.png"></a></li>
-            <li><a href="http://www.nightingale360.com?redirect=false" title="Visit the English site"><img src="img/gb.png"></a></li>
+            <li><a href="http://www.nightingale360.com/de" title="Visit the German site"><img src="img/de.png" alt="Visit the German site"></a></li>
+            <li><a href="http://www.nightingale360.com?redirect=false" title="Visit the English site"><img src="img/gb.png" alt="Visit the English site"></a></li>
         </ul>
     </nav>
     <header>
       <div id="header-content">
         <div id="header-content--middle">
           <div id="header-content--inner">
-            <img id="logo" src="img/logo.png">
+            <img id="logo" src="img/logo.png" alt="Sigma and Libratone">
             <h1>Velkommen til Nightingale</h1>
             <p>For at markere lanceringen af den nye Libratone ZIPP 360&deg; højttaler er vi gået sammen med den verdenskendte dance duo SIGMA. Resultatet er nummeret "Nightingale", og du er inviteret til at være med i 360° videoen til det spritnye track!</p>
             <p>Vi vil sende ZIPP højttalere og 360&deg; kameraer ud til SIGMA fans over hele verden for at indfange de skøre, smukke og overraskende ting, der sker, når du og dine venner hører tracket. Resultatet bliver en fantastisk 360° video skabt af dig og andre SIGMA fans verden over!</p>
           </div>
-          <a class="page-scroll hidden-xs" href="#get-involved"><img class="chev bounce" src="img/chev-white.png"></a>
+          <a class="page-scroll hidden-xs" href="#get-involved"><img class="chev bounce" src="img/chev-white.png" alt="Scroll down"></a>
         </div>
       </div>
     </header>
@@ -83,7 +83,7 @@ require_once('phpmailer/mail.php');
         </div>
         <div class="row">
           <div class="col-md-12">
-            <a class="page-scroll" href="#submission"><img class="chev" src="img/chev-black.png"></a>
+            <a class="page-scroll" href="#submission"><img class="chev" src="img/chev-black.png" alt="Scroll down"></a>
           </div>
         </div>
       </div>
@@ -92,7 +92,7 @@ require_once('phpmailer/mail.php');
       <div class="container">
         <div class="row">
           <h2>Send din idé</h2>
-          <form action="" method="post" id="nightingale-form">
+          <form method="post" id="nightingale-form">
             <div class="col-md-6">
               <label>Navn:</label>
               <div class="input-wrap">
@@ -379,7 +379,7 @@ require_once('phpmailer/mail.php');
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <a class="share twitter-share-button" href="http://twitter.com/intent/tweet?status=SIGMA+og+Libratone+har+lavet+et+nyt+track+og+du+kan+være+med+i+den+unikke+360&deg;+musikvideo.+Vær+med!+http://bit.ly/1majBwy" target="_blank"><img src="img/tweet.png"></a>
+                    <a class="share twitter-share-button" href="http://twitter.com/intent/tweet?status=SIGMA+og+Libratone+har+lavet+et+nyt+track+og+du+kan+være+med+i+den+unikke+360&deg;+musikvideo.+Vær+med!+http://bit.ly/1majBwy" target="_blank"><img src="img/tweet.png" alt="Share on Twitter"></a>
                     <a class="share" href="http://www.facebook.com/share.php?u=www.nightingale360.com&title=Libratone+Nightingale+360" target="_blank"><img alt="Share on Facebook!" src="img/fb.png"></a>
                     <h2>#nightingale</h2>
                 </div>

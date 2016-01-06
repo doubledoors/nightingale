@@ -86,20 +86,20 @@ require_once('phpmailer/mail.php');
     <nav>
         <a href="http://www.libratone.com" target="_blank">Visit Libratone.com</a>
         <ul id="lang-select">
-            <li><a title="Visit the Danish site" href="http://www.nightingale360.com/dk"><img src="img/dk.png"></a></li>
-            <li><a title="Visit the German site" href="http://www.nightingale360.com/de"><img src="img/de.png"></a></li>
+            <li><a title="Visit the Danish site" href="http://www.nightingale360.com/dk"><img src="img/dk.png" alt="View Danish site"></a></li>
+            <li><a title="Visit the German site" href="http://www.nightingale360.com/de"><img src="img/de.png" alt="View German site"></a></li>
         </ul>
     </nav>
     <header>
       <div id="header-content">
         <div id="header-content--middle">
           <div id="header-content--inner">
-            <img id="logo" src="img/logo.png">
+            <img id="logo" src="img/logo.png" alt="Sigma and Libratone">
             <h1>Welcome to Nightingale</h1>
             <p>To celebrate the launch of the Libratone ZIPP 360&deg; speaker, we've teamed up with world-famous dance act SIGMA to create an epic new track 'Nightingale' and want you to star in our 360&deg; video.</p>
             <p>We'll be sending out our speakers with 360° cameras to SIGMA fans all over the world to capture the crazy, beautiful and amazing things you get up to while you listen to the song. The result?  An awesome 360&deg; video made by you.</p>
           </div>
-          <a class="page-scroll hidden-xs" href="#get-involved"><img class="chev bounce" src="img/chev-white.png"></a>
+          <a class="page-scroll hidden-xs" href="#get-involved"><img class="chev bounce" src="img/chev-white.png" alt="Scroll down"></a>
         </div>
       </div>
     </header>
@@ -126,7 +126,7 @@ require_once('phpmailer/mail.php');
         </div>
         <div class="row">
           <div class="col-md-12">
-            <a class="page-scroll" href="#submission"><img class="chev" src="img/chev-black.png"></a>
+            <a class="page-scroll" href="#submission"><img class="chev" src="img/chev-black.png" alt="Scroll down"></a>
           </div>
         </div>
       </div>
@@ -135,7 +135,7 @@ require_once('phpmailer/mail.php');
       <div class="container">
         <div class="row">
           <h2>Send us your idea</h2>
-          <form action="" method="post" id="nightingale-form">
+          <form method="post" id="nightingale-form">
             <div class="col-md-6">
               <label>Name</label>
               <div class="input-wrap">
@@ -422,7 +422,7 @@ require_once('phpmailer/mail.php');
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <a class="share twitter-share-button" href="http://twitter.com/intent/tweet?status=Sigma+and+Libratone+have+created+a+new+track+and+you+can+star+in+Libratone's+epic+360+&deg;+video.+Get+involved! http://bit.ly/1majBwy" target="_blank"><img src="img/tweet.png"></a>
+                    <a class="share twitter-share-button" href="http://twitter.com/intent/tweet?status=Sigma+and+Libratone+have+created+a+new+track+and+you+can+star+in+Libratone's+epic+360+&deg;+video.+Get+involved!+http://bit.ly/1majBwy" target="_blank"><img src="img/tweet.png" alt="Share on Twitter!"></a>
                     <a class="share" href="http://www.facebook.com/share.php?u=www.nightingale360.com&title=Libratone+Nightingale+360" target="_blank"><img alt="Share on Facebook!" src="img/fb.png"></a>
                     <h2>#nightingale</h2>
                 </div>

@@ -16,7 +16,8 @@ require_once('phpmailer/mail.php');
         <meta name="description" content="Submit your Nightingale 360&deg; idea to Libratone.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta property="og:url" content="localhost:8888/" />
+        <meta property="fb:app_id" content="1581713375417403" />
+        <meta property="og:url" content="http://nightingale-staging.co.uk.192-168-0-10.bosscomms.com/" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Nightingale 360" />
         <meta property="og:description" content="SIGMA und Libratone haben einen neuen Song kreiert und Du kannst eine Rolle in Libratone's 360&deg; Video spielen. Sei dabei! http://bit.ly/1majBwy" />
@@ -57,7 +58,6 @@ require_once('phpmailer/mail.php');
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-5TQLQJ');</script>
-    <!-- End Google Tag Manager —>
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -67,20 +67,20 @@ require_once('phpmailer/mail.php');
     <nav>
         <a href="http://www.libratone.com" target="_blank">Visit Libratone.com</a>
         <ul id="lang-select">
-            <li><a href="http://www.nightingale360.com/dk"><img src="img/dk.png"></a></li>
-            <li><a href="http://www.nightingale360.com?redirect=false"><img src="img/gb.png"></a></li>
+            <li><a href="http://www.nightingale360.com/dk"><img src="img/dk.png" alt="View Danish site"></a></li>
+            <li><a href="http://www.nightingale360.com?redirect=false"><img src="img/gb.png" alt="View German site"></a></li>
         </ul>
     </nav>
     <header>
       <div id="header-content">
         <div id="header-content--middle">
           <div id="header-content--inner">
-            <img id="logo" src="img/logo.png">
+            <img id="logo" src="img/logo.png" alt="Sigma and Libratone">
             <h1>Wilkommen zu Nightingale</h1>
             <p>Um die Markteinführung der neuen Libratone ZIPP 360&deg; Lautsprecher zu feiern, haben wir uns mit dem weltberühmten Dance Act SIGMA zusammengetan, um den sagenhaften neuen Song &bdquo;Nightingale&ldquo; zu kreieren. Wir möchten, dass Du in unserem 360&deg; Video mitspielst!</p>
             <p>Wir werden unsere Lautsprecher zusammen mit 360&deg; Kameras an SIGMA Fans in der ganzen Welt schicken, um die verrückten, schönen und aufregenden Momente einzufangen, die ihr erlebt, wenn ihr das Lied hört. Das Ergebnis? Ein phantastisches 360&deg; Video, das Du gemacht hast!</p>
           </div>
-          <a class="page-scroll hidden-xs" href="#get-involved"><img class="chev bounce" src="img/chev-white.png"></a>
+          <a class="page-scroll hidden-xs" href="#get-involved"><img class="chev bounce" src="img/chev-white.png" alt="Scroll down"></a>
         </div>
       </div>
     </header>
@@ -107,7 +107,7 @@ require_once('phpmailer/mail.php');
         </div>
         <div class="row">
           <div class="col-md-12">
-            <a class="page-scroll" href="#submission"><img class="chev" src="img/chev-black.png"></a>
+            <a class="page-scroll" href="#submission"><img class="chev" src="img/chev-black.png" alt="Scroll down"></a>
           </div>
         </div>
       </div>
@@ -116,7 +116,7 @@ require_once('phpmailer/mail.php');
       <div class="container">
         <div class="row">
           <h2>Schicke uns deine idee</h2>
-          <form action="" method="post" id="nightingale-form">
+          <form method="post" id="nightingale-form">
             <div class="col-md-6">
               <label>Name</label>
               <div class="input-wrap">
@@ -403,7 +403,7 @@ require_once('phpmailer/mail.php');
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <a class="share twitter-share-button" href="http://twitter.com/intent/tweet?status=SIGMA+und+Libratone+haben+einen+neuen+Song+kreiert+und+Du+kannst+eine+Rolle+in+Libratone's+360&deg;+Video+spielen.+Sei+dabei!+http://bit.ly/1majBwy" target="_blank"><img src="img/tweet.png"></a>
+                    <a class="share twitter-share-button" href="http://twitter.com/intent/tweet?status=SIGMA+und+Libratone+haben+einen+neuen+Song+kreiert+und+Du+kannst+eine+Rolle+in+Libratone's+360&deg;+Video+spielen.+Sei+dabei!+http://bit.ly/1majBwy" target="_blank"><img src="img/tweet.png" alt="Share on Twitter"></a>
                     <a class="share fb-share-button" href="" target="_blank"><img alt="Share on Facebook!" src="img/fb.png"></a>
                     <h2>#nightingale</h2>
                 </div>
