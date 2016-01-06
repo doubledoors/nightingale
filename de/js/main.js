@@ -14,16 +14,6 @@
         event.preventDefault();
     });
 
-    $('a.fb-share-button').bind('click', function(event){
-
-    	FB.ui({
-		  method: 'share',
-		  href: 'https://developers.facebook.com/docs/',
-		}, function(response){});
-
-		event.preventDefault();
-    });
-
     var happy = {
 
 	    email: function (val) {

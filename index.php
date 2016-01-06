@@ -423,7 +423,7 @@ require_once('phpmailer/mail.php');
             <div class="row">
                 <div class="col-md-12">
                     <a class="share twitter-share-button" href="http://twitter.com/intent/tweet?status=Sigma+and+Libratone+have+created+a+new+track+and+you+can+star+in+Libratone's+epic+360+&deg;+video.+Get+involved!+http://bit.ly/1majBwy" target="_blank"><img src="img/tweet.png" alt="Share on Twitter!"></a>
-                    <a class="share" href="http://www.facebook.com/share.php?u=www.nightingale360.com&title=Libratone+Nightingale+360" target="_blank"><img alt="Share on Facebook!" src="img/fb.png"></a>
+                    <a class="share" href="http://www.facebook.com/share.php?u=www.nightingale360.com&amp;title=Libratone+Nightingale+360" target="_blank"><img alt="Share on Facebook!" src="img/fb.png"></a>
                     <h2>#nightingale</h2>
                 </div>
             </div>
@@ -434,7 +434,7 @@ require_once('phpmailer/mail.php');
         <div class="row">
           <h2>Terms &amp; Conditions</h2>
           <div class="col-md-12">
-            <p>In connection with all User Content ideas you submit using the User Content Submission page, you grant to Libratone, the Parent Companies and the Affiliates, the unqualified, unrestricted, unconditional, unlimited, worldwide, irrevocable, perpetual and royalty free right, license, authorization and permission, in any form or format, on or through any media or medium and with any technology or devices now known or hereafter developed or discovered, in whole or in part, to host, cache, store, maintain, use, reproduce, distribute, display, exhibit, perform, publish, broadcast, transmit, modify, prepare derivative works of, adapt, reformat, translate, and otherwise exploit all or any portion of your User Content on the Site.</p>
+            <p>You must be aged 18 years or older to submit any content. By submitting any content through the submission page, you grant to Libratone, the Parent Companies and the Affiliates, the unqualified, unrestricted, unconditional, unlimited, worldwide, irrevocable, perpetual and royalty free right, license, authorization and permission, in any form or format, on or through any media or medium and with any technology or devices now known or hereafter developed or discovered, in whole or in part, to host, cache, store, maintain, use, reproduce, distribute, display, exhibit, perform, publish, broadcast, transmit, modify, prepare derivative works of, adapt, reformat, translate, and otherwise exploit all or any portion of your User Content on the Site.</p>
           </div>
         </div>
       </div>

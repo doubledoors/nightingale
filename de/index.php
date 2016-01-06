@@ -15,13 +15,6 @@ require_once('phpmailer/mail.php');
         <title>Nightingale 360 Sign Up</title>
         <meta name="description" content="Submit your Nightingale 360&deg; idea to Libratone.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <meta property="fb:app_id" content="1581713375417403" />
-        <meta property="og:url" content="http://nightingale-staging.co.uk.192-168-0-10.bosscomms.com/" />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content="Nightingale 360" />
-        <meta property="og:description" content="SIGMA und Libratone haben einen neuen Song kreiert und Du kannst eine Rolle in Libratone's 360&deg; Video spielen. Sei dabei! http://bit.ly/1majBwy" />
-        <meta property="og:image" content="img/share-msg.png" />
         
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -33,23 +26,6 @@ require_once('phpmailer/mail.php');
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
-    <script>
-    window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1581713375417403',
-      xfbml      : true,
-      version    : 'v2.5'
-    });
-    };
-
-    (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    </script>
     <!-- Google Tag Manager -->
     <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5TQLQJ"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -58,9 +34,6 @@ require_once('phpmailer/mail.php');
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-5TQLQJ');</script>
-    <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -404,7 +377,7 @@ require_once('phpmailer/mail.php');
             <div class="row">
                 <div class="col-md-12">
                     <a class="share twitter-share-button" href="http://twitter.com/intent/tweet?status=SIGMA+und+Libratone+haben+einen+neuen+Song+kreiert+und+Du+kannst+eine+Rolle+in+Libratone's+360&deg;+Video+spielen.+Sei+dabei!+http://bit.ly/1majBwy" target="_blank"><img src="img/tweet.png" alt="Share on Twitter"></a>
-                    <a class="share fb-share-button" href="" target="_blank"><img alt="Share on Facebook!" src="img/fb.png"></a>
+                    <a class="share" href="http://www.facebook.com/share.php?u=www.nightingale360.com&amp;title=Libratone+Nightingale+360" target="_blank"><img alt="Share on Facebook!" src="img/fb.png"></a>
                     <h2>#nightingale</h2>
                 </div>
             </div>
